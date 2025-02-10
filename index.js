@@ -180,7 +180,6 @@ addEventListener("DOMContentLoaded", (event) => {
 
         var interval = setInterval(() => {
             buttonsanswerNoDiv.style.position = 'absolute';
-            console.log(buttonsanswerNoDiv);
             let top = buttonsanswerNoDiv.style.top.replace('px', '');
             let left = buttonsanswerNoDiv.style.left.replace('px', '');
             let speed = 40;
