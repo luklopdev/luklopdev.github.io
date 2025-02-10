@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./custom.css" rel="stylesheet"/>
+</head>
+<body class="bg-danger-subtle">
+    <div id="first-step">
+        <div class="container-fluid text-center">
+            <div class="row align-items-center" style="height: 100vh;">
+                <div>
+                    <h1>Hi! I have a surprise for you!</h1>
+                    <img src="./img/IMG_9852.png" width="300px"/>
+                    <p>But first, you need to guess the sentence by entering the letters into the input field below.</p>
+                    <p>Don't worry, you have 3 lives to guess the sentence.</p>
+                    <p>Let's start!</p>
+                    <button id="startGame" class="btn btn-primary">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-div" class="container-fluid text-center " style="display: none;">
+        <div class="row align-items-center" style="height: 100vh;">
+            <div>
+                <div id="game-header">
+                    <h1>Guess the sentence! :)</h1>
+
+                    <div class="center">
+                        <img src="./img/pixel-heart.webp" width="20" height="20"></span></img>
+                        <span id="numberOfLivesSpan">
+                    </div>
+                </div>
+                
+                <img id="image-smile" src="./img/2.png" class="rounded-50" width="150px" style="display: none;"/>
+
+                <div>
+                    <div class="row align-items-center justify-content-center" id="sentence-to-guess">____ ___ __ __ __________</div>
+                    <div id="buttons-answer" class="column align-items-center justify-content-center" style="display: none;">
+                        <button id="buttons-answer-yes" class="btn btn-success">Yes! <3 </button>
+                        <button id="buttons-answer-no" class="btn btn-danger">No! :(</button>
+                    </div>
+                </div>
+                <div class="container-fluid text-center">
+                    <div class="row justify-content-center">
+                        <input class="form-control" style="margin: 3px !important; width: auto; text-align: center;" type="text" id="letterInput" placeholder="Enter the letter" autocomplete="off"/>
+                        <input class="btn btn-success" style="width: auto; margin: 3px;" type="button" id="submit" value="Try">
+                    </div>
+                </div>
+                
+                <div id="accordion-group" class="accordion right-top-corner">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header bg-primary-subtle">
+                            <button class="accordion-button">
+                                Letters guessed correctly
+                            </button>
+                            
+                        </h5>
+                        <div class="accordion-collapse collapse show accordion-custom" id="guessedLettersDiv" style="color: rgb(5, 134, 18);">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h5 class="accordion-header bg-primary-subtle">
+                            <button class="accordion-button">
+                                Letters guessed incorrectly
+                            </button>
+                        </h5>
+                        <div class="accordion-collapse collapse show accordion-custom" id="errorLetterDiv" style="color:rgb(167, 39, 10)">
+                
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <p style="color: red;" id="errorParagraph"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game-over-div" style="display: none;">
+        <div class="container-fluid text-center">
+            <div class="row align-items-center" style="height: 100vh;">
+                <div>
+                    <h1>Thanks! Now go look into the first drawer in our office and get the reward!</h1>
+                    <img src="./img/photo.jpg" class="heart-shaped" width="300px"/>
+                    <p>Don't forget to check out my effort for doing this ;) <a target="_blank" href="google.com">Click here!</a></p>
+                    <img class="img-thumbnail" src="./img/IMG_5198.jpeg" width="150px"/>
+                    <p>Me working on it the whole week...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
