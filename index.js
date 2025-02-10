@@ -5,7 +5,7 @@ String.prototype.replaceAt = function(index, replacement) {
 addEventListener("DOMContentLoaded", (event) => {
     var noButtonMovementWorking = false;
 
-    let sentenceToGuess = 'a';//"Will you be my Valentine?";
+    let sentenceToGuess = "Will you be my Valentine?";
     let currentState = '';
     let renderedCurrentState = '';
     let guessedLetters = [];
